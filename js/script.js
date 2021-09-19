@@ -2,7 +2,14 @@
 $('.menu__btn').click(function() {
   $(this).toggleClass('menu__btn--close');
   $('.menu__list').slideToggle();
-})
+});
+
+//Read more
+$('.pumping__more').click(function() {
+  event.preventDefault();
+  $(this).hide();
+  $('.pumping__text').slideToggle();
+});
 
 //Scroll to menu anchor
 $(document).ready(function () {
