@@ -1,10 +1,18 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   padding-top: 50px;
+  padding-bottom: 10px;
+  .transition();
+  
+  &--scroll {
+    padding-top: 10px;
+    background-color: rgba(255,255,255,0.7);
+    .transition();
+  }
 }
 .header__wrap {
   display: flex;
@@ -22,6 +30,8 @@
   img {
     display: block;
     margin-right: 12px;
+    width: 37px;
+    height: 38px;
   }
   span {
     color: #155DA0;
