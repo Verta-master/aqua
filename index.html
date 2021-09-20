@@ -49,7 +49,11 @@
   <main>
     <section class="promo">
       <div class="promo__bg">
-<!--   imgs for paralax here     -->
+        <img src="img/images/leaves.png" alt="АКВАСЕРВИС" class="promo__leaves paroller">
+        <img src="img/images/sky.png" alt="АКВАСЕРВИС" class="promo__sky paroller">
+        <img src="img/images/mountains.png" alt="АКВАСЕРВИС" class="promo__mountains paroller">
+        <img src="img/images/river.png" alt="АКВАСЕРВИС" class="promo__river paroller">
+        <img src="img/images/pump.png" alt="АКВАСЕРВИС" class="promo__pump paroller">
       </div>
       <div class="wrapper">
         <h1>
@@ -92,6 +96,7 @@
     </section>
     
     <section class="pumping pumping--reverse" id="pumping">
+      <img src="img/images/leaf-left.png" alt="АКВАСЕРВИС" class="pumping__left">
       <div class="wrapper">
         <div class="pumping__wrap">
           <figure class="pumping__img">
@@ -108,6 +113,10 @@
     </section>
     
     <section class="pumping" id="motopumps">
+      <img src="img/images/leaf-right.png" alt="АКВАСЕРВИС" class="pumping__right">
+      <img src="img/images/bg.jpg" alt="АКВАСЕРВИС" class="pumping__water">
+      <img src="img/images/tube-left.png" alt="АКВАСЕРВИС" class="pumping__tubeleft">
+      <img src="img/images/tube-right.png" alt="АКВАСЕРВИС" class="pumping__tuberight">
       <div class="wrapper">
         <div class="pumping__wrap">
           <figure class="pumping__img">
@@ -156,7 +165,7 @@
         </div>
         
         <div class="benefits">
-          <h3 class="title-3">Наши преимущества</h3>
+          <h3 class="title">Наши преимущества</h3>
           <ul class="benefits__list">
             <li class="benefits__item">
               <p><b>Собственное насосное оборудование</b> производительностью от 100 до 1400 м³/час</p>
@@ -327,6 +336,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -354,6 +364,15 @@
       spaceBetween: 65,
       loop: true,
     });
+  </script>
+  
+  <!-- Parallax -->
+  <script>
+//    $(".paroller, [data-paroller-factor]").paroller({
+//      factor: 0.5,
+//      type: 'foreground',
+//      direction: 'horizontal'
+//    });
   </script>
 </body>
 </html>

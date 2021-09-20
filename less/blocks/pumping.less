@@ -1,4 +1,6 @@
 .pumping {
+  position: relative;
+  z-index: 5;
   margin-bottom: 100px;
   
   &--reverse {
@@ -6,6 +8,9 @@
       flex-direction: row-reverse;
     }
   }
+}
+#motopumps {
+  padding-bottom: 100px;
 }
 .pumping__line,
 .pumping__blocks,
@@ -22,6 +27,11 @@
 }
 .pumping__rent {
   width: 450px;
+  
+  .title-3 {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 .pumping__img {
   width: 450px;
@@ -42,6 +52,7 @@
 }
 .pumping__more {
   display: block;
+  margin-top: 25px;
   font-size: 14px;
   line-height: 19px;
   color: #155DA0;
@@ -126,5 +137,38 @@
   }
 }
 .pumping__blocks {
-  margin-bottom: 90px;
+  margin-bottom: 100px;
+}
+.pumping__left,
+.pumping__right {
+  position: absolute;
+  z-index: 1;
+}
+.pumping__left {
+  top: -250px;
+}
+.pumping__right {
+  top: -150px;
+}
+.pumping__tubeleft,
+.pumping__left {
+  left: 0;
+}
+.pumping__tuberight,
+.pumping__right {
+  right: 0;
+}
+.pumping__water {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+.pumping__tubeleft,
+.pumping__tuberight {
+  position: absolute;
+  z-index: 0;
+  top: 220px;
 }

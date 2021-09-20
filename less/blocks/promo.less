@@ -1,18 +1,26 @@
 .promo {
-  padding-top: 90px;
-  padding-bottom: 140px;
+  position: relative;
+  padding-top: 170px;
+  padding-bottom: 135px;
+  
+  .wrapper {
+    position: relative;
+    z-index: 10;
+  }
 }
 .promo__info {
   max-width: 712px;
 }
 .promo__btns {
   display: flex;
-  justify-content: space-between;
+//  justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
 }
 .promo__price {
   width: 219px;
   height: 60px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +37,7 @@
 .promo__comment {
   position: relative;
   padding-left: 59px;
+  margin-left: 28px;
   font-size: 14px;
   line-height: 20px;
   color: #155DA0;
@@ -47,4 +56,35 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+.promo__mountains,
+.promo__sky,
+.promo__leaves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+.promo__leaves {
+  z-index: 5;
+}
+.promo__sky {
+  z-index: -1;
+}
+.promo__mountains {
+  z-index: 2;
+}
+.promo__river {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.promo__pump {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 4;
 }
