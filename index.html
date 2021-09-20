@@ -122,7 +122,7 @@
         
         <div class="pumping__blocks">
           <div class="pumping__rent">
-            <h3 class="title-3"></h3>
+            <h3 class="title-3">Аренда мотопомп</h3>
             <p><b>Водопонижение иглофильтрами. Откачка и перекачка больших объемов воды на расстояние.</b> Аренда и продажа потопомп для грязной воды. Водопонижение иглофильтрами.</p>
             <p>Откачка и перекачка больших объемов воды на расстояние. Аренда и продажа потопомп для грязной воды. Водопонижение иглофильтрами.</p>
             <a href="#" class="btn pumping__btn">ЗАКАЗАТЬ</a>
@@ -159,13 +159,13 @@
           <h3 class="title-3">Наши преимущества</h3>
           <ul class="benefits__list">
             <li class="benefits__item">
-              <p><b>Собственное насосное оборудование</b>производительностью от 100 до 1400 м³/час</p>
+              <p><b>Собственное насосное оборудование</b> производительностью от 100 до 1400 м³/час</p>
             </li>
             <li class="benefits__item">
-              <p><b>Услуги, аренда и продажа</b>мотопомп по регионам РФ</p>
+              <p><b>Услуги, аренда и продажа</b> мотопомп по регионам РФ</p>
             </li>
             <li class="benefits__item">
-              <p>Все инженеры имеют <b>огромный опыт работы</b></p>
+              <p>Все инженеры имеют<b> огромный опыт работы</b></p>
             </li>
             <li class="benefits__item">
               <p><b>Известные клиенты</b> наряду с <b>конкурентными ценами</b></p>
@@ -221,6 +221,12 @@
                 </figure>
               <p class="title-4">Перекачка воды</p>
               </div>
+              <div class="swiper-slide work__slide">
+                <figure class="work__img">
+                  <img src="img/images/img-4.jpg" alt="Откачка воды">
+                </figure>
+                <p class="title-4">Откачка воды</p>
+              </div>
             </div>
           </div>
           <div class="swiper-button-prev work__prev"></div>
@@ -266,14 +272,14 @@
     
     <section class="contacts" id="contacts">
       <div class="contacts__map">
-<!--    iframe here    -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8951.89528457161!2d37.446177694153484!3d55.880468725609155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5385d709bb759%3A0x1fc5db82e180cf07!2sPravoberezhnaya%20Ulitsa%2C%201%D0%91%2C%20Moskva%2C%20Russia%2C%20125445!5e0!3m2!1sen!2skz!4v1632121501480!5m2!1sen!2skz" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="wrapper">
         <div class="contacts__info">
           <p class="title-3">Контакты</p>
           <div class="contacts__block contacts__block--phone">
             <span>Телефон</span>
-            <a href="tel:+79199968719">+7 (919) 996-87-19</a>
+            <a href="tel:+79199968719" class="contacts__phone">+7 (919) 996-87-19</a>
           </div>
           <div class="contacts__block contacts__block--address">
             <span>Адрес</span>
@@ -285,7 +291,7 @@
           </div>
           <div class="contacts__block contacts__block--mail">
             <span>E-mail</span>
-            <a href="mailto:info@aquaservice">info@aquaservice</a>
+            <a href="mailto:info@aquaservice" class="contacts__mail"><span>info@aquaservice</span></a>
           </div>
         </div>
       </div>
@@ -330,7 +336,6 @@
       preventClicksPropagation: false,
       slidesPerView: 4,
       spaceBetween: 30,
-      loop: true,
     });
     
     var mySwiper2 = new Swiper ('.clients__slider', {
