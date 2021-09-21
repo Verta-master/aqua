@@ -45,7 +45,7 @@ $(document).ready(function () {
         menu = target;
     $target = $(target);
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
+        'scrollTop': $target.offset().top - 100
     }, 500, 'swing', function () {
         $(document).on("scroll", onScroll);
     });

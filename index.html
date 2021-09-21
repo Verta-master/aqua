@@ -48,12 +48,11 @@
   
   <main>
     <section class="promo">
-      <div class="promo__bg">
-        <img src="img/images/leaves.png" alt="АКВАСЕРВИС" class="promo__leaves paroller">
-        <img src="img/images/sky.png" alt="АКВАСЕРВИС" class="promo__sky paroller">
-        <img src="img/images/mountains.png" alt="АКВАСЕРВИС" class="promo__mountains paroller">
-        <img src="img/images/river.png" alt="АКВАСЕРВИС" class="promo__river paroller">
-        <img src="img/images/pump.png" alt="АКВАСЕРВИС" class="promo__pump paroller">
+      <div class="promo__bg" id="scene">
+        <img src="img/images/leaves.png" alt="АКВАСЕРВИС" class="promo__leaves rellax" data-rellax-speed="2">
+        <img src="img/images/sky.png" alt="АКВАСЕРВИС" class="promo__sky rellax" data-rellax-speed="2">
+        <img src="img/images/river-2.png" alt="АКВАСЕРВИС" class="promo__river2 rellax" data-rellax-speed="-4">
+        <img src="img/images/pump.png" alt="АКВАСЕРВИС" class="promo__pump rellax" data-rellax-speed="2">
       </div>
       <div class="wrapper">
         <h1>
@@ -96,7 +95,7 @@
     </section>
     
     <section class="pumping pumping--reverse" id="pumping">
-      <img src="img/images/leaf-left.png" alt="АКВАСЕРВИС" class="pumping__left">
+      <img src="img/images/leaf-left.png" alt="АКВАСЕРВИС" class="pumping__left rellax"  data-rellax-speed="2">
       <div class="wrapper">
         <div class="pumping__wrap">
           <figure class="pumping__img">
@@ -113,10 +112,10 @@
     </section>
     
     <section class="pumping" id="motopumps">
-      <img src="img/images/leaf-right.png" alt="АКВАСЕРВИС" class="pumping__right">
-      <img src="img/images/bg.jpg" alt="АКВАСЕРВИС" class="pumping__water">
-      <img src="img/images/tube-left.png" alt="АКВАСЕРВИС" class="pumping__tubeleft">
-      <img src="img/images/tube-right.png" alt="АКВАСЕРВИС" class="pumping__tuberight">
+      <img src="img/images/leaf-right.png" alt="АКВАСЕРВИС" class="pumping__right rellax" data-rellax-speed="2">
+      <img src="img/images/bg.jpg" alt="АКВАСЕРВИС" class="pumping__water rellax" data-rellax-speed="2">
+      <img src="img/images/tube-left.png" alt="АКВАСЕРВИС" class="pumping__tubeleft rellax" data-rellax-speed="-5">
+      <img src="img/images/tube-right.png" alt="АКВАСЕРВИС" class="pumping__tuberight rellax" data-rellax-speed="-5">
       <div class="wrapper">
         <div class="pumping__wrap">
           <figure class="pumping__img">
@@ -336,7 +335,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/jquery.paroller.min.js"></script>
+  <script src="js/rellax.min.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -376,11 +375,9 @@
   
   <!-- Parallax -->
   <script>
-//    $(".paroller, [data-paroller-factor]").paroller({
-//      factor: 0.5,
-//      type: 'foreground',
-//      direction: 'horizontal'
-//    });
+    var rellax = new Rellax('.rellax', {
+      center: true
+    });
   </script>
 </body>
 </html>
