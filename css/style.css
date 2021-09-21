@@ -1729,23 +1729,12 @@ blockquote {
   z-index: 3;
 }
 @media (max-width: 1270px) {
-  .promo {
-    background-image: none;
-  }
-  .promo__sky,
-  .promo__leaves {
-    display: block;
-  }
-  .promo__pump {
-    bottom: 200px;
+  .promo__river2 {
+    display: none;
   }
 }
-@media (max-width: 1022px) {
-  h1 {
-    max-width: 500px;
-  }
+@media (max-width: 480px) {
   .promo__pump {
-    bottom: auto;
-    top: 200px;
+    bottom: 200px;
   }
 }
