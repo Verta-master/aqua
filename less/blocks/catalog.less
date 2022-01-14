@@ -59,7 +59,7 @@
   margin-bottom: 10px;
   margin-right: 10px;
   
-  a {
+  button {
     display: inline-block;
     vertical-align: middle;
     padding: 10px 20px;
@@ -73,12 +73,16 @@
     .transition();
   }
   
-  &:hover a,
-  &:active a {
+  &:hover button,
+  &:active button {
     color: #fff;
     background-color: #155DA0;
     .transition();
   }
+}
+.catalog__name button.is-checked {
+  color: #fff;
+  background-color: #155DA0;
 }
 .catalog__list {
   margin-right: -25px;
@@ -87,6 +91,7 @@
   display: flex;
   flex-direction: column;
   width: 290px;
+  max-width: 100%;
   margin-right: 25px;
   margin-bottom: 30px;
   padding: 20px 18px;
@@ -138,4 +143,32 @@
   height: 45px;
   font-size: 16px;
   line-height: 22px;
+}
+@media (max-width: 1400px) {
+  .catalog__item {
+    margin-right: 13px;
+  }
+  .catalog__list {
+    margin-right: -13px;
+  }
+}
+@media (max-width: 1270px) {
+  .catalog__item {
+    margin-right: 20px;
+  }
+  .catalog__list {
+    margin-right: 0;
+  }
+  .internal {
+    padding-top: 80px;
+  }
+  .catalog .pumping__water {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .catalog__item {
+    margin-right: 0;
+    width: 100%;
+  }
 }

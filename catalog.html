@@ -58,13 +58,14 @@
         <p>У нас вы можете купить или арендовать дизельные и электрические мотопомпы и вспомогательное оборудование для откачки грязной воды и осушения, водопонижения. Мы используем и предлагаем своим клиентам продукцию надежных производителей (в т.ч. «Varisco») с сухими, вакуумными насосами или установками с рециркуляцией масла с производительностью до 1100 кубометров в час. При покупке вы получаете новое оборудование с гарантиями качества, возможность гарантийного технического обслуживания и ремонта. Покупка нового оборудования актуальна в первую очередь для крупных строительных компаний, ведущих масштабное инфраструктурное строительство, возведение целых коттеджных поселков, жилых районов.</p>
         
         <h2>Аренда и продажа мотопомп</h2>
-        <ul class="catalog__category">
-          <li class="catalog__name"><a href="#">Дизельные мотопомпы</a></li>
-          <li class="catalog__name"><a href="#">Электрические мотопомпы</a></li>
-          <li class="catalog__name"><a href="#">Мембранные насосы</a></li>
+        <ul class="catalog__category filters-button-group">
+          <li class="catalog__name"><button class="is-checked" data-filter="*">Все</button></li>
+          <li class="catalog__name"><button data-filter=".disel">Дизельные мотопомпы</button></li>
+          <li class="catalog__name"><button data-filter=".electric">Электрические мотопомпы</button></li>
+          <li class="catalog__name"><button data-filter=".membrane">Мембранные насосы</button></li>
         </ul>
-        <ul class="catalog__list">
-          <li class="catalog__item">
+        <ul class="grid catalog__list">
+          <li class="catalog__item disel" data-category="disel">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-1.jpg" alt="Дизельные мотопомпы">
@@ -74,7 +75,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item electric" data-category="electric">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/product-2.jpg" alt="Электрические мотопомпы">
@@ -84,7 +85,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item membrane" data-category="membrane">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-3.jpg" alt="Центробежные самовсасывающие насосы VARISCO">
@@ -94,7 +95,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item disel" data-category="disel">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-4.jpg" alt="Мембранные насосы TAPFLO">
@@ -104,7 +105,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item disel" data-category="disel">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-5.jpg" alt="Мембранные насосы DELLMECO">
@@ -114,7 +115,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item electric" data-category="electric">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-6.jpg" alt="Запчасти для насосов">
@@ -124,7 +125,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item electric" data-category="electric">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-7.jpg" alt="Оборудование для водопонижения">
@@ -134,7 +135,7 @@
             <p>В продаже и для аренды дизельные мотопомпы Varisco JE 6-250, Varisco D 6-250 G10 FVM0, аналоги JD 6-250, Борей-350 и другие мотопомпы производительностью до 360 м³/час для перекачки грязной воды с фракциями до 76 мм.</p>
             <a data-fancybox data-src="#call" href="javascript:;" class="btn catalog__btn">ЗАКАЗАТЬ</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item electric membrane" data-category="membrane">
             <a href="#" class="catalog__link">
               <figure class="catalog__img">
                 <img src="img/images/catalog-8.jpg" alt="Мотопомпы Б/У">
@@ -204,13 +205,33 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script-internal.js"></script>
   <script src="js/rellax.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   
   <!-- Parallax -->
   <script>
     var rellax = new Rellax('.rellax', {
       center: true
+    });
+  </script>
+  
+  <!-- Filter -->
+  <script>
+    var $grid = $('.grid').isotope({
+      itemSelector: '.catalog__item',
+      layoutMode: 'fitRows'
+    });
+    $('.filters-button-group').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+    $('.catalog__category').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
     });
   </script>
 </body>
