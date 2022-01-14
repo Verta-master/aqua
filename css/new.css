@@ -1,0 +1,18 @@
+.promo__river2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 3;
+}
+@media (max-width: 1270px) {
+  .promo__river2 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .promo__pump {
+    bottom: 200px;
+  }
+}
