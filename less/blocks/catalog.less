@@ -1,0 +1,141 @@
+.internal {
+  padding-top: 122px;
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
+.catalog {
+  position: relative;
+  padding-bottom: 70px;
+  background-image: url(../img/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+//  overflow: hidden;
+  
+  .pumping__right {
+    top: 100px;
+  }
+  .pumping__left {
+    top: -440px;
+  }
+  .pumping__tubeleft {
+    top: 720px;
+  }
+  .pumping__tuberight {
+    top: 790px;
+  }
+}
+.catalog__title {
+  min-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  .transition();
+}
+.catalog__category,
+.catalog__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog__category {
+  margin-bottom: 30px;
+}
+.catalog__name {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #155DA0;
+    border: 1px solid #155DA0;
+    border-radius: 10px;
+    .transition();
+  }
+  
+  &:hover a,
+  &:active a {
+    color: #fff;
+    background-color: #155DA0;
+    .transition();
+  }
+}
+.catalog__list {
+  margin-right: -25px;
+}
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  padding: 20px 18px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 10px;
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4D4D;
+  }
+}
+.catalog__link {
+  display: block;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    .catalog__title {
+      color: @blue;
+      .transition();
+    }
+  }
+}
+.catalog__img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+.catalog__btn {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 138px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 22px;
+}

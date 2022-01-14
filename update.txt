@@ -1,0 +1,46 @@
+1) ВНутри блока .header__block добавить 3-ю ссылку:
+
+<a class="header__wa" href="#"></a>
+	
+2)Стили:
+
+.header__block::before {
+display:none;
+}
+.header__wa {
+position: absolute;
+top: 0;
+right: 0;
+display: block;
+width: 55px;
+height: 55px;
+background-image: url(/custom/custom_16_09_2021_17_33/img/icons/whatsapp.svg);
+background-repeat: no-repeat;
+background-size: contain;
+}
+@media (max-width: 766px) {
+.header__block {
+padding-right: 60px;
+}
+.header__wa {
+width: 45px;
+height: 45px;
+}
+}
+@media (max-width: 480px) {
+.header__wa,
+.menu__btn {
+width: 30px;
+height: 30px;
+}
+.header__link,
+.header__phone {
+font-size: 10px;
+}
+.header__block {
+padding-right: 35px;
+}
+.logo {
+font-size: 12px;
+}
+}
